@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<script src="moment.js"></script>
+	<script src="Chart.min.js"></script>
+    <script src="wallet.js"></script>
+</head>
+<body>
+	<input type="text" id="walletAddress"  value="" />
+	<br/>
+	<button onclick="getWalletInfo()" id="testButton" >Enter wallet address</button>
+
+
+	<div id="balance-header">
+		<h3>Account Balance</h3>
+		<h5>Ether Balance</h5>
+			<div id="etherbalance"></div>
+		<h5>Current Ether Price</h5>
+			<div id="etherprice"></div>
+		<h5>USD Balance</h5>
+			<div id="usdbalance"></div>
+	</div>
+
+	<div id="total-header">
+		<h3>Total Unique Wallets Transacted With</h3>
+		<div id="totalTransactedWallets"></div>
+	</div>
+
+	<div id="frequent-header">
+		<h3>Wallets with 2+ Transactions</h3>
+		<div id="frequentWallets"></div>
+	</div>
+
+	<div id="recent-header">
+		<h3>Transaction Volume in last 90 days (in ether)</h3>
+		<div id="recentTransactionVolume"></div>
+	</div>
+
+	<canvas id="myChart" width="50" height="50"></canvas>
+
+
+</body>
+</html>
